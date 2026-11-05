@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+.adamina-regular {
+  font-family: "Adamina", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b2c056;
+    color: #ede2e2;
+}
+header{
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #c3c8a2;
+}
+a {
+    text-decoration: none;
+    color: #ede2e2;
+}
+header h3 {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+header h3 span {
+    color: #7d6f6f;
+    padding: .00001px;
+    margin: 0;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+header nav a {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+header nav a:nth-child(4){
+    margin-right: 20px;
+}
+header nav a:hover {
+    color: #7d6f6f;
+    border-bottom: 1px solid #7d6f6f ;
+    transition: 2s ease;
+}
+.hero {
+    height: 80vh;
+    background-color: #a7af72;
+    position: relative;
+}
+.hero h1{
+    font-size: 60px;
+    font-family:  "Adamina", serif;
+    background: linear-gradient(to right, #ae8264, #b57d41);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.hero h1, .hero p {
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero p {
+    top: 53%;
+    color: #242222;
+    font-size: 23px;
+}
+video {
+    opacity: 0.5;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+}
