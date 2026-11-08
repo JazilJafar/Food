@@ -3,3 +3,62 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: linear-gradient(to right, #95b8db, #bdc279);
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #b9db95, #e9ecef);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+body > p {
+    font-family: 'system-ui', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: .5rem;
+    margin-bottom: 20px;
+}
+body img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+.gridshop{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.griditem{
+    background: linear-gradient(to right, #575a5d, #bdc279);
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    text-align: center;
+    opacity: 0.9;
+    border-radius: 26px;
+}
+.griditem h2{
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.griditem p{
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.griditem button{
+    background: linear-gradient(to right, #c39a39, #e9ecef);
+    border: none;
+    margin-top: 10px;
+    padding: 7px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
