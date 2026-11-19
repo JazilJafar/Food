@@ -5,6 +5,8 @@
 }
 body{
     background: linear-gradient(to right, #95b8db, #bdc279);
+    min-height: 100vh;
+    padding: 15px;
 }
 h1{
     font-family: 'Poppins', sans-serif;
@@ -61,4 +63,51 @@ body img {
     font-size: 1.2rem;
     cursor: pointer;
     border-radius: 10px;
+}
+.cartsec{
+    background: #fff;
+    max-width: 800px;
+    margin: 50px auto 20px;
+    padding: 25px;
+    border-radius: 20px;
+    font-family: 'system-ui', sans-serif;
+}
+.cartitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+.cartcontrols button{
+    border: none;
+    background: #bdc279;
+    padding: 7px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.cartcontrols .removebtn {
+    background: #e77c7c;
+    color: #ffffff;
+}
+.cartfooter{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.cartfooter h3{
+    font-family: 'system-ui', sans-serif;
+    font-size: 1.4rem;
+    color: #333;
+}
+.clearcartbtn{
+    background: #e77c7c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 7px;
+    cursor: pointer;
 }
