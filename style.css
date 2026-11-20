@@ -50,7 +50,7 @@ header nav a {
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
-header nav a:nth-child(4){
+header nav a:nth-child(3){
     margin-right: 20px;
 }
 header nav a:hover {

@@ -65,18 +65,20 @@ body img {
     border-radius: 10px;
 }
 .cartsec{
-    background: #fff;
-    max-width: 800px;
-    margin: 50px auto 20px;
-    padding: 25px;
-    border-radius: 20px;
+    background: #ffffff;
+    max-width: 850px;
+    margin: 55px auto 30px;
+    padding: 30px;
+    border-radius: 18px;
     font-family: 'system-ui', sans-serif;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid #eeeeee;
 }
 .cartitem{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+     display: flex;
+    flex-direction: column;
     gap: 12px;
+    margin-top: 18px;
 }
 .cartcontrols button{
     border: none;
@@ -86,6 +88,13 @@ body img {
     cursor: pointer;
     font-size: 1rem;
 }
+.cartsec > h2{
+     font-size: 27px;
+    color: #292929;
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+}
+
 .cartcontrols .removebtn {
     background: #e77c7c;
     color: #ffffff;
@@ -102,6 +111,14 @@ body img {
     font-family: 'system-ui', sans-serif;
     font-size: 1.4rem;
     color: #333;
+}
+.cartcount{
+    color: #555a36;
+    display: inline-block;
+    padding: 9px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
 }
 .clearcartbtn{
     background: #e77c7c;
@@ -126,9 +143,80 @@ body img {
     outline: none;
     font-size: 1rem;
 }
+#searchbtn{
+    background: #bdc279;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
 #noresult{
     text-align: center;
     color: white;
     font-size: 1.2rem;
     margin: 20px;
+}
+.cartrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background: #fafafa;
+    padding: 17px;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    transition: 0.2s ease;
+}
+.cartrow h3 {
+    color: #333333;
+    font-size: 17px;
+    margin: 0 0 6px;
+}
+.cartrow p {
+    color: #777777;
+    font-size: 14px;
+    margin: 0;
+    font-weight: 600;
+}
+.cartcontrols {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.cartcontrols button {
+    border: none;
+    background: #252523;
+    color: white;
+    padding: 8px 13px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.cartcontrols button:hover {
+    background: #a6ad5e;
+    transform: scale(1.05);
+}
+.cartcontrols span {
+    min-width: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #333333;
+}
+.cartcontrols .removebtn {
+    font-size: 13px;
+}
+.cartcontrols .removebtn:hover {
+    background: #e77c7c;
+    color: #ffffff;
+}
+.emptycart {
+    text-align: center;
+    color: #888888;
+    padding: 30px 15px;
+    border-radius: 12px;
+    font-size: 15px;
 }
