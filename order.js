@@ -5,6 +5,10 @@ let cartitem = document.querySelector("#cartitem");
 let cartnum = document.querySelector("#cartnum");
 let carttotal = document.querySelector("#carttotal");
 let clearcart = document.querySelector("#clearcart");
+let foodsearch = document.querySelector("#foodsearch");
+let searchbtn = document.querySelector("#searchbtn");
+let noresult = document.querySelector("#noresult");
+let foodcards = document.querySelectorAll(".griditem");
 let cart = [];
 ordbtn.forEach(function (btn) {
     btn.addEventListener("click", function (){
@@ -25,7 +29,7 @@ ordbtn.forEach(function (btn) {
         })
       }
       updatecart();
-    })
+    });
 });
 function updatecart(){
     cartitem.innerHTML = "";
@@ -92,4 +96,25 @@ function updatecart(){
     cart = [];
     updatecart();
  });
+ function searchfood(){
+    let searchvalue = foodsearch.value.toLowerCase().trim();
+    let found = 0;
+    foodcards.forEach(function(food){
+        let foodname = food.querySelector("h2").innerText.toLowerCase();
+        if (foodname.includes(searchvalue)){
+            food.style.display = "";
+            found++;
+        }else{
+            food.style.display = "none";
+        }
+    });
+ if (found === 0){
+        noresult.style.display = "block";
+ } else{
+        noresult.style.display = "none";
+ }
+ }
+ foodsearch.addEventListener("input", searchfood);
+
+searchbtn.addEventListener("click", searchfood);
  updatecart();
