@@ -148,5 +148,12 @@ video {
     border: none;
     padding: 10px 20px;
     font-size: 20px;
-
+}
+.cartrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
 }
